@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://oRg.tAzZ/" xmlns:tns="http://oRg.tAzZ/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Exception" type="tns:Exception"/>
+
+  <xs:element name="gogogo" type="tns:gogogo"/>
+
+  <xs:element name="gogogoResponse" type="tns:gogogoResponse"/>
+
+  <xs:element name="gogogo_1" nillable="true" type="tns:gogogo"/>
+
+  <xs:element name="gogogo_1Response" nillable="true" type="tns:gogogoResponse"/>
+
+  <xs:complexType name="gogogo">
+    <xs:sequence>
+      <xs:element name="image" type="xs:string" minOccurs="0"/>
+      <xs:element name="effect" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="gogogoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:base64Binary" nillable="true" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Exception">
+    <xs:sequence>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
